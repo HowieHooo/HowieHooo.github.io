@@ -133,6 +133,15 @@ btn_netflix.onclick=function(){
 
 };
 
+var btn_default = document.getElementById('default-btn');
+btn_default.onclick=function(){
+    readFile = "Data/FirstDegree.csv";
+    g.selectAll("*").remove();
+    visualizeData(readFile);
+    simulation.alphaTarget(0.1);
+    simulation.restart();
+}
+
 
 var btn_search = document.getElementById('search-btn');
 btn_search.onclick=function(){
