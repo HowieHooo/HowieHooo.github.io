@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="d3/d3.js"></script>
+<script scr="d3/d3.min.js"></script>
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-5">LinkedIn connections visualization</h1>
+        <p clas="lead">Finding the right connections in a company would be hard on LinkedIn. Each connections has several relationships to a target
+        company. Which connection should we connect? How many connections do I have in a target company? This visualization will give you a whole view of the connections in a target company. Then user then could easily find the most related connection to contact. Each data is linked by degree.</p>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <h3>Search by target company: </h3>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" id="search-input" class="form-control" placeholder="Please type in the company name." aria-label="Please type in the company name." aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id="search-btn" class="btn btn-outline-secondary" type="button">Search</button>
+          </div>
+        </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <h3>Search by famous company tags: </h3>
+        </div>
+        <div id="buttonrow" class="row">
+            <div class="col">
+            <button type="button" id="netflix" class="btn btn-outline-secondary">
+                <img src="Images/netflix-icon.png" width="120" height="80"/>
+            </button>
+            <button type="button" id="ebay" class="btn btn-outline-secondary">
+                <img src="Images/ebay-256.png" width="120" height="80"/>
+            </button>
+            <button type="button" id="apple" class="btn btn-outline-secondary">
+                <img src="Images/social-apple-outline.png" width="120" height="80"/>
+            </button>
+            <button type="button" id="uber" class="btn btn-outline-secondary">
+                <img src="Images/uber-icon.png" width="120" height="80"/>
+            </button>
+            <button type="button" id="microsoft" class="btn btn-outline-secondary">
+                <img src="Images/microsoft-256.png" width="120" height="80"/>
+            <button type="button" id="amazon" class="btn btn-outline-secondary">
+                <img src="Images/amazon-256.png" width="120" height="80"/>
+            </button>
+            <button type="button" id="linkedin" class="btn btn-outline-secondary">
+                <img src="Images/linkedin-256.png" width="120" height="80"/>
+            </button>
+                <button type="button" id="facebook" class="btn btn-outline-secondary">
+                    <img src="Images/facebook-icon.png" width="120" height="80"/>
+                </button>
+                <button type="button" id="walmart" class="btn btn-outline-secondary">
+                    <img src="Images/walmart-icon.jpeg"  width="120" height="80"/>
+                </button>
+                <button type="button" id="airbnb" class="btn btn-outline-secondary">
+                    <img src="Images/airbnb-icon.png" width="120" height="80"/>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <svg class= "graph" width="1100" height="550" viewBox="-500 -275 1000 550"></svg>
+    </div>
+    
+        <script src="js/visualize.js"></script>>
+
+<div class="jumbotron" style="margin-bottom: 0px">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+
